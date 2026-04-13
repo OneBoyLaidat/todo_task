@@ -3,7 +3,7 @@
 A clean, modern, and fully accessible Todo Task Card component built with semantic HTML5, modern CSS, and vanilla JavaScript. This project was developed as part of the Frontend Wizards Stage 0 assessment, focusing on **testability**, **accessibility**, and **responsive design**.
 
 ## 🔗 Project Links
-* **Live Demo:** [Click here](https://vercel.com/oneboylaidats-projects/todo-task/GtfTF6MC7RnXrmpZQ7QHYSHB4W3u)
+* **Live Demo:** [Click here](https://todo-task-plum.vercel.app/)
 * **Repository:** [Click here](https://github.com/OneBoyLaidat/todo_task)
 
 ---
