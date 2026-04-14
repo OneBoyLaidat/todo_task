@@ -1,6 +1,6 @@
 # Todo Item Card
 
-A clean, modern, and fully accessible Todo Task Card component built with semantic HTML5, modern CSS, and vanilla JavaScript. This project was developed as part of the Frontend Wizards Stage 0 assessment, focusing on **testability**, **accessibility**, and **responsive design**.
+A clean, modern, and fully accessible Todo Task Card component built with semantic HTML5, modern CSS, and vanilla JavaScript. This project was developed as part of the HNG Internship 14 Frontend Wizards Stage 0 assessment, focusing on **testability**, **accessibility**, and **responsive design**.
 
 ## 🔗 Project Links
 
