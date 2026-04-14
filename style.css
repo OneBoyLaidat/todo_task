@@ -1,157 +1,190 @@
 :root {
-    --primary: #6366f1;
-    --bg-page: #f8fafc;
-    --bg-card: #ffffff;
-    --text-main: #1e293b;
-    --text-muted: #64748b;
-    --border: #e2e8f0;
-    --urgent: #ef4444;
-    --success: #10b981;
+  --primary: #6366f1;
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --urgent: #ef4444;
+  --success: #10b981;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: var(--bg-page);
-    color: var(--text-main);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 1rem;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 /* Card Styles */
 .todo-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    width: 100%;
-    max-width: 450px; /* Tablet/Desktop limit */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, opacity 0.2s ease;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 450px; /* Tablet/Desktop limit */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 /* Visual state for completed task */
 .todo-card.completed {
-    opacity: 0.7;
-    background-color: #f1f5f9;
+  opacity: 0.7;
+  background-color: #f1f5f9;
 }
 
 .todo-card.completed .todo-title {
-    text-decoration: line-through;
-    color: var(--text-muted);
+  text-decoration: line-through;
+  color: var(--text-muted);
 }
 
 .todo-header {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .todo-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 /* Badges & Tags */
-.badge, .tag {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-right: 0.5rem;
+.badge,
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
 }
 
-.priority-high { background: #fee2e2; color: var(--urgent); }
-.status-pending { background: #fef3c7; color: #d97706; }
-.status-done { background: #d1fae5; color: var(--success); }
+.priority-high {
+  background: #fee2e2;
+  color: var(--urgent);
+}
+.status-pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+.status-done {
+  background: #d1fae5;
+  color: var(--success);
+}
 
 .todo-tags {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .tag {
-    background: #f1f5f9;
-    color: #475569;
-    margin-right: 0;
+  background: #f1f5f9;
+  color: #475569;
+  margin-right: 0;
 }
 
 .todo-description {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    line-height: 1.5;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* Footer & Controls */
 .todo-footer {
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 
 .date-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
 }
 
-.due-date { font-size: 0.85rem; color: var(--text-muted); }
-.time-remaining { font-size: 0.85rem; font-weight: 700; color: var(--primary); }
+.due-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.time-remaining {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+}
 
 .actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .toggle-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .toggle-container input {
-    width: 1.2rem;
-    height: 1.2rem;
-    accent-color: var(--primary);
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--primary);
 }
 
 .button-group {
-    display: flex;
-    gap: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
 }
 
 .icon-btn {
-    background: none;
-    border: 1px solid var(--border);
-    padding: 0.4rem 0.6rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.2s;
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
-.icon-btn:hover { background: #f8fafc; border-color: var(--text-muted); }
-.icon-btn:focus-visible { outline: 2px solid var(--primary); }
-.btn-delete:hover { color: var(--urgent); border-color: var(--urgent); }
+.icon-btn:hover {
+  background: #f8fafc;
+  border-color: var(--text-muted);
+}
+.icon-btn:focus-visible {
+  outline: 2px solid var(--primary);
+}
+.btn-delete:hover {
+  color: var(--urgent);
+  border-color: var(--urgent);
+}
 
 /* Mobile optimization */
 @media (max-width: 400px) {
-    .todo-card {
-        max-width: 100%;
-        border-radius: 0;
-        border: none;
-    }
+  .todo-card {
+    max-width: 100%;
+    border-radius: 0;
+    border: none;
+  }
 }
